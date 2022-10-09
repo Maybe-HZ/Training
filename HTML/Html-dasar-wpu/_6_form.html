@@ -6,14 +6,15 @@
 </head>
 
 <body>
-    <!-- komennya ntar dulu -->
+    <!-- setiap input harus dimasukkan dalam elemen form -->
     <form>
-        <table >
+        <table>
             <tr>
                 <td>
                     <label for="username">username :</label>
                 </td>
                 <td>
+                    <!-- type text digunakan untuk menginput text -->
                     <input type="text" id="username">
                 </td>
             </tr>
@@ -22,17 +23,21 @@
                     <label for="password">password :</label>
                 </td>
                 <td>
+                    <!-- type password digunakan untuk menginput password  -->
                     <input type="password" id="password">
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
+                    <!-- type radiio digunakan untuk memilih tetapi jika tidak dikategorikan dalam "name"
+                         yang sama maka bisa memilih lebih dari satu -->
                     <input type="radio" id="pria" name="gender"><label for="pria">pria</label>
                     <input type="radio" id="wanita" name="gender"><label for="wanita">wanita</label>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
+                    <!-- type checkbox digunakan untuk memilih lebih dari satu -->
                     <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
                     <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
                     <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
@@ -40,11 +45,13 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <textarea ></textarea>
+                    <!-- textarea digunakan untuk menginput suatu komentar atau suatu masukan yang lumayan panjang -->
+                    <textarea></textarea>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
+                    <!-- select digunakan untuk memilih satu dari banyaknya opsi yang diberikan -->
                     <select>
                         <option>jawa</option>
                         <option>sunda</option>
