@@ -1,0 +1,11 @@
+/* Pseudo class digunakan untuk mendefinisikan keadaan khusus dari suatu elemen. */
+.a1 a:link{
+    color: orange;
+}
+.a2 a:hover{
+    color: blue;
+}
+.a3 a:visited{
+    color: rgb(24, 112, 24);
+    
+}
