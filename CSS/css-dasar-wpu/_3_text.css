@@ -1,0 +1,23 @@
+h1{
+    color:blue;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+p{
+    color: #562145;
+    text-align: justify;
+    text-indent: 2%;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+#p1{
+    text-decoration: overline;
+}
+#p2{
+    text-decoration: line-through;
+}
+#p3{
+    text-decoration: underline;
+}

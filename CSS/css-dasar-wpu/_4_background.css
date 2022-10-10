@@ -1,0 +1,18 @@
+.header {
+    background-color: azure;
+}
+
+.main {
+    background-image: url(../assets/oriental-tiles.png);
+    color: white;
+}
+
+.footer li {
+    list-style: none;
+    float: left;
+    padding: 5px 5px;
+}
+
+.footer {
+    
+}
