@@ -1,0 +1,14 @@
+/* selector yang digunakan dibawah adalah id yang diawaki dengan # diikuti dengan idnya*/
+#select{
+    font-size: medium;
+}
+
+/* selector yang digunakan dibawah adalah class yang diawali dengan . diikuti classnya */
+.p1{
+    color: blue;
+}
+
+/* selector yang digunakan dibawah adalah elemen  */
+li{
+    color: red;
+}
