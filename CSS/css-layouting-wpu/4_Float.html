@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Float</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* ^^^^^^^^^^^^^^ css reset ^^^^^^^^^^^^^^ */
+        body {
+            background-color: wheat;
+            overflow: auto;
+        }
+
+        div.container {
+            margin: 20px 10%;
+            background-color: white;
+        }
+
+        .head h1 {
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        div.container h2 {
+            margin: 5px 0 10px 5px;
+            font-weight: bold;
+        }
+
+        div.container h3 {
+            margin: 5px 0 10px 5px;
+        }
+
+        div.container div.isi ul li {
+            margin: 0 5px 10px 10px;
+            display: inline-block;
+        }
+
+        div.container div.isi table {
+            margin: 0 0 0 5px;
+        }
+
+        div.container div.isi tr {
+            padding: 5px;
+        }
+
+        /* Jika suatu elemen diberi properti float maka ia akan berada pada lapisan yang berbeda (anggap aja kayak kue lapis) */
+        div.container div.isi div.tes1 div.t1 {
+            background-color: red;
+            width: 20%;
+            height: 100px;
+            float: left;
+        }
+
+        div.container div.isi div.tes1 div.t2 {
+            background-color: green;
+            width: 40%;
+            height: 100px;
+            float: none;
+        }
+
+        div.container div.isi div.tes1 div.t3 {
+            background-color: blue;
+            width: 20%;
+            height: 100px;
+            float: right;
+        }
+
+        div.container div.isi div.tes2 div.t1 {
+            float: left;
+            background-color: grey;
+            margin: 50px;
+        }
+
+        div.container div.isi div.tes3 .tes3a {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            margin: 5px;
+            float: left;
+        }
+
+        /* Properti clear digunakan untuk mengatasi container(tempat penampung) yang collapse(runtuh) saat float digunakan */
+        div.container div.isi div.clear {
+            clear: both;
+        }
+
+        div.container div.isi div.tes4 div.satu {
+            width: 25%;
+            height: 100px;
+            background-color: red;
+        }
+
+        div.container div.isi div.tes4 div.dua {
+            width: 50%;
+            height: 100px;
+            background-color: green;
+        }
+
+        div.container div.isi div.tes4 div.tiga {
+            width: 25%;
+            height: 100px;
+            background-color: blue;
+        }
+
+        div.container div.isi div.tes4 div.tiga,
+        div.satu,
+        div.dua {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Float</h1>
+        </div>
+        <div class="isi">
+
+            <h2>Deskripsi</h2>
+            <p>Float merupakan properti pada CSS untuk mengatur posisi sebuah elemen. <br> Sebuah elemen dapat dipaksa
+                untuk
+                berada di sebelah kiri atau kanan dari parent/ pembungkusnya dengan menggunakan properti ini.</p>
+            <p><a href="https://css-tricks.com/all-about-floats/"></a>https://css-tricks.com/all-about-floats/</p>
+            <br>
+            <h3>Properti pada float</h3>
+            <ul>
+                <li>none</li>
+                <li>left</li>
+                <li>right</li>
+            </ul>
+
+            <h3>Yang bisa dilakukan menggunakan properti float : </h3>
+            <table>
+                <tr>
+                    <td>text wrapping</td>
+                    <td> : membuat text mengelilingi gambar/elemen lain</td>
+                </tr>
+                <tr>
+                    <td>image gallery</td>
+                    <td> : membuat serangkaian gambar menjadi galeri</td>
+                </tr>
+                <tr>
+                    <td>multi-column layout</td>
+                    <td> : membuat halaman memiliki beberapa kolom</td>
+                </tr>
+                <tr>
+                    <td>dll</td>
+                    <td> : dan masih banyak lagi</td>
+                </tr>
+            </table>
+            <br>
+
+            <div class="tes1">
+                <div class="t1"></div>
+                <div class="t2"></div>
+                <div class="t3"></div>
+            </div>
+
+            <div class="clear"></div>
+
+            <h3>Text wrapping</h3>
+            <div class="tes2">
+                <div class="t1"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, magni vero. Illum odio error
+                    architecto, laborum dicta voluptatibus voluptatum earum dolores quaerat ipsum suscipit asperiores
+                    nesciunt? Sit alias quas enim!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quaerat assumenda doloremque
+                    laudantium quisquam officiis aliquam nisi itaque vel culpa harum quos dolor fugiat alias vitae saepe
+                    ad impedit explicabo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur dolores rerum fugiat
+                    nihil totam, amet debitis laboriosam officia ex laudantium obcaecati velit veniam provident ipsum
+                    expedita ducimus exercitationem suscipit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi impedit nobis dignissimos ducimus
+                    aperiam. Error quae exercitationem perferendis, cupiditate porro adipisci magnam ipsa delectus
+                    debitis, similique ducimus? Mollitia, rem quae.</p>
+            </div>
+
+            <div class="tes3">
+                <h3>Image Gallery</h3>
+                <div class="tes3a">1</div>
+                <div class="tes3a">2</div>
+                <div class="tes3a">3</div>
+                <div class="tes3a">4</div>
+                <div class="tes3a">5</div>
+                <div class="tes3a">6</div>
+                <div class="tes3a">7</div>
+                <div class="tes3a">8</div>
+                <div class="tes3a">9</div>
+                <div class="tes3a">10</div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="tes4">
+                <h3>multi-column layout</h3>
+                <div class="satu"></div>
+                <div class="dua"></div>
+                <div class="tiga"></div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        ul{
+            list-style-type: none ;
+        }
+        img {
+            width: 50%;
+        }
+        a:link{
+            text-decoration: none;
+            color: white;
+        }
+        table{
+            /* jika menggunakan properti seperti ini maka akan mengubah bagian box pada 4 bagian */
+            margin: 50px;
+            padding: 25px;
+            border: 10px solid ;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Box model</h1>
+        <ul>
+            <li>Setiap elemen dihalaman berada didalam sebuah box (kotak)</li>
+            <li>kita bisa mengatur posisi dan ukuran kotak tersebut</li>
+            <li>Kita bisa memberi warna/gambar sebagai background kotak tersebut</li>
+            <li><a href="https://css-tricks.com/the-css-box-model/">https://css-tricks.com/the-css-box-model/</a></li>
+        </ul>
+        <ul>
+            <li>CSS box model mendefinisikan ''kotak' yang dihasilkan oleh sebuah elemen, lalu menampilkannya sesuai
+                dengan format visualnya</li>
+            <li><a href="https://www.w3.org/TR/CSS2/box.html">https://www.w3.org/TR/CSS2/box.html</a></li>
+        </ul>
+        <ul>
+            <li>CSS box model terdiri dari margin, border, padding dan content.</li>
+            <li><a
+                    href="https://www.w3schools.com/css/css_boxmodel.asp">https://www.w3schools.com/css/css_boxmodel.asp</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <td>Margin</td>
+                <td> : area transparan di sekitar kotak (diluar border)</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td> : area transparan didalam kotak (antara content dan border)</td>
+            </tr>
+            <tr>
+                <td>Border</td>
+                <td> : batas disekeliling content dan padding</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td> : konten sebenarnya di dalam box, bisa berupa teks atau gambar</td>
+            </tr>
+        </table>
+        <img src="../assets/CSS-Box-Model.png" alt="CSS-Box-Model">
+        <table>
+            <tr>
+                <td colspan="3">Properti untuk margin, padding & border</td>
+            </tr>
+            <tr>
+                <td>margin-top</td>
+                <td>padding-top</td>
+                <td>border-top</td>
+            </tr>
+            <tr>
+                <td>margin-right</td>
+                <td>padding-right</td>
+                <td>border-right</td>
+            </tr>
+            <tr>
+                <td>margin-bottom</td>
+                <td>padding-bottom</td>
+                <td>border-bottom</td>
+            </tr>
+            <tr>
+                <td>margin-left</td>
+                <td>padding-left</td>
+                <td>border-left</td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>padding</td>
+                <td>border</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>Total width & height elemen</p>
+        <p>width + padding + border</p>
+        <p>height + padding + border</p>
+    </div>
+</body>
+
+</html>

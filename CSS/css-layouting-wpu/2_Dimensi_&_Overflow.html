@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dimaensi & Overflow</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        div.satu {
+            background-color: white;
+        }
+
+        table {
+            border: 2px solid #eee;
+        }
+
+        div.dua {
+            height: 200px;
+            background-color: white;
+        }
+        div.dua p.p1{
+            height: 200px;
+            background-color: aliceblue;
+        }
+        div.tiga p.p1{
+            height: 200px;
+            overflow: auto;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="satu">
+        <h1>Dimensi dan Overflow</h1>
+        <p> Properti pada dimensi hanya ada 2 yaitu Width dan Height dengan beberapa satuan ukur yaitu</p>
+        <table>
+            <tr>
+                <td>px</td>
+                <td> : Satuan px disini memiliki nilai pasti</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td> : Satuan % disini relatif terhadap browser / parentnya</td>
+            </tr>
+            <tr>
+                <td>in,cm,mm,pt,pc</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="dua">
+        <p>contoh dimensi child lebih besar dari parent</p>
+        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend bibendum mi, eget bibendum leo.
+            Sed ut dapibus felis. Nam interdum non nulla et maximus. Duis et sapien fringilla, sodales risus in,
+            condimentum metus. Duis aliquam eu sapien vel accumsan. Fusce pellentesque id nisl ac imperdiet. Orci
+            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla maximus, tortor
+            hendrerit sodales tincidunt, tellus leo faucibus mauris, ut maximus erat tortor in diam. Proin massa
+            ante, imperdiet ac pulvinar maximus, sollicitudin feugiat libero. Integer a placerat nisi. Donec non
+            maximus quam. Praesent fringilla porttitor leo, vitae aliquam justo dapibus sit amet. Mauris a ipsum
+            suscipit, dictum lectus at, ultricies urna. Proin maximus tempus porta. Cras at purus pretium arcu
+            tristique facilisis. Sed pretium, enim sed tristique dignissim, risus mi pharetra dolor, vitae semper
+            odio mi eu lorem.
+        </p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="tiga">
+        <h2>Solusi</h2>
+        <p>Gunakanlah overflow</p>
+        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend bibendum mi, eget bibendum leo.
+            Sed ut dapibus felis. Nam interdum non nulla et maximus. Duis et sapien fringilla, sodales risus in,
+            condimentum metus. Duis aliquam eu sapien vel accumsan. Fusce pellentesque id nisl ac imperdiet. Orci
+            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla maximus, tortor
+            hendrerit sodales tincidunt, tellus leo faucibus mauris, ut maximus erat tortor in diam. Proin massa
+            ante, imperdiet ac pulvinar maximus, sollicitudin feugiat libero. Integer a placerat nisi. Donec non
+            maximus quam. Praesent fringilla porttitor leo, vitae aliquam justo dapibus sit amet. Mauris a ipsum
+            suscipit, dictum lectus at, ultricies urna. Proin maximus tempus porta. Cras at purus pretium arcu
+            tristique facilisis. Sed pretium, enim sed tristique dignissim, risus mi pharetra dolor, vitae semper
+            odio mi eu lorem.</p>
+        <p>beberapa Properti yang bisa digunakan dalam overflow</p>
+        <table>
+            <tr>
+                <td>Vsisble</td>
+                <td> : nilai default konten akan keluar jika tidak cukup</td>
+            </tr>
+            <tr>
+                <td>Auto</td>
+                <td> : akan memunculkan scroll jika dibutuhkan</td>
+            </tr>
+            <tr>
+                <td>Hidden</td>
+                <td> : menyembunyikan konten berlebih</td>
+            </tr>
+            <tr>
+                <td>Scroll</td>
+                <td> : selalu memunculkan scroll meskipun konten cukup</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
