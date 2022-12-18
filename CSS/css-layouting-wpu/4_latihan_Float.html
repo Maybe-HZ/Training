@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Latihan Box Model</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Latihan Float</title>
+
     <style>
-        /* css reset vvv */
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+    */
         html,
         body,
         div,
@@ -136,98 +142,154 @@
             border-spacing: 0;
         }
 
-        /* css reset ^^^ */
+        /* ^ ^ ^ CSS RESET ^ ^ ^ */
+        body {
+            font: 16/28px arial, sans-serif;
+            background-color: wheat;
+            color: black;
+        }
 
-        
+        .container {
+            width: 1000px;
+            margin: auto;
+            background-color: white;
+        }
+
+        .header {
+            padding: 20px;
+        }
+
+        .header .judul {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .header ul li {
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        .header a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .hero {
+            height: 300px;
+            background-color: black;
+            background-image: url(../assets/bg_comp.jpg);
+            background-size: cover;
+            background-position: 0 -150px;
+            border: 5px solid gray;
+        }
+
+        .main {
+            width: 650px;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .main h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .main p {
+            padding: 10px;
+            font-size: 14;
+        }
+
+        .footer {
+            background-color: black;
+            padding: 10px;
+        }
+
+        .footer p {
+            color: white;
+            text-align: center;
+            font-size: 12;
+        }
+
+        .sidebar {
+            width: 300px;
+            float: right;
+            padding: 20px;
+        }
+
+
+        /* ClearFix*/
+
+        .cf:before,
+        .cf:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        .cf {
+            *zoom: 1;
+        }
     </style>
 </head>
 
 <body>
-    <div >
-        <div  >
-            <h1 >MyWebsite</h1>
-            <ul >
+    <div class="container">
+        <div class="header">
+            <h1 class="judul">Latihan Float</h1>
+            <ul>
                 <li><a href="">home</a></li>
                 <li><a href="">about</a></li>
-                <li><a href="">products</a></li>
-                <li><a href="">services</a></li>
+                <li><a href="">product</a></li>
+                <li><a href="">service</a></li>
                 <li><a href="">contact</a></li>
             </ul>
         </div>
-
-        <div ></div>
-
-        <div >
-            <div >
-                <h2 >Judul Artikel</h2>
-                <h5 >ditulis oleh <a href="">ahmad saiful mutaqi azis</a> pada hari itu</h5>
-                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod facilisis
-                    pulvinar.
-                    Maecenas vel massa nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. 
-                    Quisque elementum ullamcorper leo, et pretium libero aliquam sodales. Donec accumsan est quis
-                    rhoncus
-                    commodo. Donec quis nulla quis dui elementum posuere in a ante. Donec dignissim blandit mi, et
-                    placerat
-                    sapien facilisis bibendum. Aenean ante metus, suscipit at facilisis condimentum, ornare et est.
-                    Donec
-                    volutpat, ipsum et pellentesque pulvinar, sapien risus viverra nibh, in viverra orci justo sit amet
-                    dui.
-                    Aenean eu vulputate leo. Fusce id turpis porta, iaculis velit at, tincidunt orci. Sed facilisis
-                    turpis
-                    nisi, ac imperdiet orci sagittis eget. Morbi nec consequat lacus. Pellentesque pulvinar nulla eu
-                    accumsan viverra. <br><br>
-
-                    Vestibulum tincidunt lacus ac aliquam molestie. Duis vehicula mollis tempus. Ut sollicitudin eu
-                    massa
-                    sit amet tempor. Vestibulum volutpat ligula at condimentum faucibus. Aliquam id condimentum velit.
-                    Proin
-                    ullamcorper vel lacus non varius. Aliquam luctus varius magna maximus vestibulum. Duis at dui
-                    ultrices,
-                    pulvinar eros sit amet, cursus tortor. Nam at tellus vel mauris semper aliquet. Donec interdum ante
-                    eu
-                    vestibulum pretium. <br><br>
-
-                    Quisque mollis, ligula sit amet fermentum mattis, leo dolor sagittis ante, vulputate malesuada elit
-                    nibh
-                    vitae eros. Suspendisse vel velit egestas, placerat nunc quis, dapibus ante. Aenean pellentesque
-                    imperdiet risus in condimentum. Praesent at leo id nunc consectetur fringilla. Mauris libero mi,
-                    facilisis malesuada malesuada viverra, lacinia eu magna. Aenean et eros iaculis, consectetur nibh
-                    vel,
-                    placerat nunc. Curabitur pharetra tellus nulla, et placerat ipsum posuere sit amet. Sed sit amet
-                    posuere
-                    dui. <br><br>
-
-                    Maecenas iaculis nibh eu facilisis vehicula. Nulla eget augue eros. Aenean nec rhoncus nibh. Nulla
-                    dictum, neque eget semper elementum, est est vehicula dui, id tincidunt libero dolor vitae lacus.
-                    Morbi
-                    sed maximus dolor. Sed mollis laoreet nunc ac finibus. Aliquam eros quam, cursus eget urna luctus,
-                    pharetra varius arcu. Sed ac rhoncus mi. Nunc tempus lacus sit amet semper ornare. Interdum et
-                    malesuada
-                    fames ac ante ipsum primis in faucibus. Cras imperdiet arcu quis viverra cursus. Aliquam molestie
-                    orci
-                    lorem, ut varius purus vestibulum maximus. Vivamus quis magna sed libero ultrices eleifend ac vel
-                    purus.
-                    Nam fringilla dignissim odio vel suscipit. <br><br>
-
-                    Curabitur vitae felis sit amet tortor euismod tristique. Cras sed felis in dui tincidunt blandit non
-                    sed
-                    neque. In mattis felis vitae erat egestas, vel imperdiet erat sollicitudin. Aenean at accumsan quam.
-                    Nulla suscipit urna at velit vehicula rhoncus. Integer congue nibh et enim volutpat scelerisque.
-                    Nulla
-                    vehicula quis mi a posuere. Vestibulum id elit ipsum. Nullam eget libero turpis. Donec finibus velit
-                    quis leo auctor, at eleifend eros pharetra. Donec diam augue, bibendum ac dui et, gravida auctor mi.
-                    Phasellus ullamcorper ex lectus, et dapibus risus laoreet egestas. Sed iaculis lectus erat, in
-                    maximus
-                    felis eleifend at. Vivamus ullamcorper ullamcorper dui. Proin eu sapien metus. Duis congue lorem eu
-                    dolor tincidunt, a tincidunt orci dictum. <br></p>
+        <div class="hero"></div>
+        <div class="content cf">
+            <div class="main">
+                <h2>Arutikel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos saepe dicta itaque quisquam
+                    exercitationem
+                    ipsum, iusto consectetur adipisci porro tempora earum. Amet aspernatur facere perferendis debitis
+                    illum
+                    hic saepe veritatis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat optio odit in maiores vel alias
+                    dicta,
+                    porro eius ipsa libero! Error at ut atque perferendis? Reprehenderit odit incidunt, repudiandae
+                    voluptas
+                    sequi quasi laudantium saepe ullam, deleniti iste, necessitatibus provident aperiam fugit eaque.
+                    Facere
+                    soluta labore aperiam distinctio magni quae inventore deleniti. Deleniti minima fugiat accusamus
+                    delectus recusandae maiores ex iste, eaque molestias itaque quae blanditiis magni sit repellat quo
+                    adipisci corporis libero tenetur cum sunt. Obcaecati iste non perferendis hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ipsam quas fugiat eius asperiores.
+                    Eum
+                    corporis at doloribus earum temporibus omnis similique autem fugit! Quis sapiente voluptatum maiores
+                    ut
+                    architecto, nemo earum labore amet magni ab minus minima dolor dolores.</p>
             </div>
-            <div>
-
+            <div class="sidebar">
+                <h3>About mi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptate neque commodi maiores.
+                    Cum, officia? Tenetur pariatur adipisci perferendis dignissimos!</p>
             </div>
+
         </div>
-        <div >
-            <p >Kopikanan 2022 <a href="">ahmadsaifulmutaqiazis.</a> seluruh pelayanan setengah matang</p>
+        <div class="footer">
+            <p class="copy">kopikanan</p>
         </div>
     </div>
 </body>

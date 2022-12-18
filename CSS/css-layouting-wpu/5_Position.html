@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body{
+            background-color: wheat;
+        }
+        .container{
+            width: 900px;
+            margin: auto;
+            background-color: white;
+        }
+        .opsi li{
+            display: inline-block;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Position</h1>
+        <ul class="opsi">
+            <li><a href="">Static</a></li>
+            <li><a href="">Relative</a></li>
+            <li><a href="">Absolute</a></li>
+            <li><a href="">Fixed</a></li>
+        </ul>
+
+        <ul>
+            <li>Static</li>
+            <ol>
+                <li>Static adalah nilai default dari tiap tiap elemen ketika tidak diberi properti position</li>
+                <li>Menggunakan position selain static(non-static), akan membuat sebuah elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya</li>
+                <li>Elemen yang diberi position selain static dapat menggunakan properti top,left,bottom dan right untuk mengatur posisinya</li>
+            </ol>
+            <li>Relative</li>
+            <ol>
+                <li>Ketika kita menggerakkan elemen dengan posisi relative(menggunakan properti top,left,bottom dan right), runag yang ditempati oleh elemen tersebut masih ada</li>
+                <li>Ketika kita menggerakkan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya</li>
+                <li>Jika kita memberi properti top:0; dan left:0; maka elemen tidak berubah dari posisinya</li>
+            </ol>
+            <li>Absolute</li>
+            <ol>
+                <li>Ketika kita menggerakkan elemen dengan posisi absolute, ruang yang ditempati oleh elemen tersebut dianggap tidak ada</li>
+                <li>Ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi dari elmen parent-nya, selama elemen parent-nya memiliki posisi yang juga non static</li>
+                <li>Jika kita memberi properti top:0; dan left:0; maka elemen akan berada diujung kiri atas dari elemen parent-nya</li>
+            </ol>
+            <li>Fixed</li>
+            <ol>
+                <li>Ketika kita menggerakkan elemen dengan posisi fixed, ruang yang ditempati oleh elemen tersebut dianggap tidak ada</li>
+                <li>Ketika kita menggerakkan elemen dengan posisi fixed, elemen akan bergerak relatif terhadap window(browser), meskipun elemen parent-nya bernilai non-static</li>
+                <li>Jika kita memberi properti top:0; dan left:0; maka elemen akan berada diujung kiri atas dari elemen parent-nya</li>
+                <li>elemen akan 'terkunci' dan tidak bergerak dari posisinya meskipun halaman discroll</li>
+            </ol>
+        </ul>
+    </div>
+</body>
+</html>
