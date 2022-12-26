@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+
+    <link rel="stylesheet" href="aset/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="ts2">CSS 3 : Latihan</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="main">
+
+            <div class="pendahuluan border jarak">
+                <h2 class="jarakHeader">Pendahuluan</h2>
+                <p>Apa itu <a href="https://id.wikipedia.org/wiki/CSS_3">CSS3</a>? CSS3 adalah generasi ke-3 dari
+                    spesifikasi CSS yang direkomendasikan oleh W3C. Untuk selebihnya bisa dilihat <a
+                        href="https://id.wikipedia.org/wiki/CSS_3">disini</a>. </p><br>
+                <p>Kenapa harus CSS3?</p><br>
+                <ul>
+                    <li>Membuat website menjadi lebih fleksibel</li>
+                    <li>Membuat mock-up dengan cepat tanpa bantuan bahasa scripting</li>
+                    <li>Mengurangi penggunaan gambar</li>
+                    <li>Penggunaan selector untuk menghindari penggunaan markup yang boros</li>
+                </ul>
+            </div>
+
+            <div class="konten">
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Border Radius</h3>
+                    <p>Border radius adalah fitur CSS yang memungkinkan Kita untuk mengatur radius sudut pada border
+                        elemen HTML. Ini berarti kita dapat mengubah sudut kotak border menjadi bulat atau memiliki
+                        sudut yang lebih halus.</p><br>
+                    <p>yang harus kita lakukan hanyalah dengan menambahkan properti border radius pada elemen html.</p>
+                    <br>
+                    <img class="radius5 center w90" src="aset/contoh_border.png" alt="contoh border radius"><br>
+                    <p>pada contoh diatas yang kita lakukan adalah untuk mengatur border radius pada semua sudut.Jika
+                        kita ingin mengaturnya pada sudut tertentu, kita bisa gunakan properti seperti dibawah ini.</p>
+                    <br>
+                    <img src="aset/contoh_border1.png" alt="contoh border radius" class="radius5 center w90"><br>
+                    <p>Kita juga bisa mengatur border radius pada semua sudut secara individual dengan menggunakan empat
+                        nilai, yang masing-masing mewakili radius sudut atas kiri, atas kanan, bawah kanan, dan bawah
+                        kiri.</p><br>
+                    <img class="radius5 center w90" src="aset/contoh_border2.png" alt="contoh border radius"><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Opacity</h3>
+                    <p>Opacity adalah properti CSS yang memungkinkan Kita mengatur tingkat ketransparanan elemen
+                        HTML.Nilai opacity berkisar antara 0 (elemen sepenuhnya transparan) hingga 1 (tidak
+                        transparansi sama sekali).</p><br>
+                    <img class="radius5 center w90" src="aset/opacity.png" alt="contoh opacity"><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">RGBa & HSLa</h3>
+                    <p>RGBa adalah format warna yang menggabungkan warna RGB (Red, Green, Blue) dengan alpha channel
+                        yang menentukan tingkat transparansi. Alpha channel berkisar dari 0 (transparan) hingga 1 (tidak
+                        transparan), dengan nilai di antara 0 dan 1 menyatakan tingkat transparansi yang lebih rendah.
+                    </p><br>
+                    <img class="radius5 center w90" src="aset/RGBa.png" alt="contoh RGBa"><br>
+                    <p>HSLa adalah format warna yang menggabungkan warna HSL (Hue, Saturation, Lightness) dengan alpha
+                        channel.Dalam HSL, hue diwakili oleh sebuah angka dari 0 hingga 360, dengan angka 0 merujuk pada
+                        merah, angka 120 merujuk pada hijau, dan angka 240 merujuk pada biru. Saturation dan lightness
+                        diwakili oleh angka dari 0 hingga 100, dengan angka 0 merujuk pada tingkat minimum dan angka 100
+                        merujuk pada tingkat maksimum. alpha channel menentukan tingkat transparansi. Alpha channel
+                        berkisar dari 0 (transparan) hingga 1 (tidak transparan), dengan nilai di antara 0 dan 1
+                        menyatakan tingkat transparansi yang lebih rendah.</p><br>
+                    <img class="radius5 center w90" src="aset/HSLa.png" alt="contoh HSLa"><br>
+                    <p>Perbedaan utama antara RGBa dan HSLa adalah cara mereka menyatakan warna. RGBa menyatakan warna
+                        dengan menggunakan nilai merah, hijau, dan biru, sementara HSLa menyatakan warna dengan
+                        menggunakan nilai hue (warna), saturation (kepekatan warna), dan lightness (kecerahan).</p><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Box Shadow</h3>
+                    <p>Box shadow adalah fitur CSS yang memungkinkan Kita menambahkan bayangan pada elemen HTML. Ini
+                        dapat digunakan untuk memberikan kesan ketinggian atau kedalaman pada elemen, atau hanya sebagai
+                        efek estetika.
+                    </p>
+                    <p>Untuk menambahkan box shadow pada elemen, gunakan properti "box-shadow":</p><br>
+                    <img class="radius5 center w90" src="aset/box_shadow.png" alt="contoh Box Shadow"><br>
+                    <p>Nilai "box-shadow" terdiri dari enam bagian:</p><br>
+                    <ul>
+                        <li>Offset-x: jarak shadow ke kanan atau ke kiri dari elemen (dalam piksel atau unit lain).</li>
+                        <li>Offset-y: jarak shadow ke atas atau ke bawah dari elemen (dalam piksel atau unit lain).</li>
+                        <li>Blur-radius: tingkat keburaman shadow (dalam piksel atau unit lain). </li>
+                        <li>Spread-radius: tingkat penyebaran shadow (dalam piksel atau unit lain).</li>
+                        <li>Color: warna shadow (dalam format warna CSS seperti RGBa atau HSLa).</li>
+                        <li>Inset (opsional): jika diatur ke "inset", shadow akan ditampilkan di dalam elemen sebagai
+                            bayangan dalam.</li>
+                    </ul><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Text Shadow</h3>
+                    <p>Text shadow adalah fitur CSS yang memungkinkan Kita menambahkan bayangan pada teks. Ini dapat
+                        digunakan untuk memberikan kesan ketinggian atau kedalaman pada teks, atau hanya sebagai efek
+                        estetika.</p>
+                    <p>Untuk menambahkan text shadow pada teks, gunakan properti "text-shadow":</p><br>
+                    <img class="radius5 center w90" src="aset/text_shadow.png" alt="Contoh Teks Shadow"><br>
+                    <p>Nilai Teks shadow hanya berisi Offset-x, Offset-y, Blur-radius & Color.</p>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Gradient (Gradasi)</h3>
+                    <p>Pertama-tama Gradient adalah value(nilai) untuk "background-image" dan bukan properti
+                        CSS3.</p><br>
+                    <h4>Linear Gradient</h4>
+                    <p>Linear gradient adalah efek gradien yang dibuat dengan mengikuti garis lurus. Ini bisa digunakan
+                        untuk memberikan kesan transisi warna yang lembut pada elemen HTML.
+                    </p>
+                    <p>Untuk menambahkan linear gradient pada elemen HTML, gunakan properti "background-image" dan
+                        tentukan nilai "linear-gradient":</p><br>
+                    <img class="radius5 center w90" src="aset/linear_gradient.png" alt="Contoh Linear Gradient"><br>
+                    <p>Properti "linear-gradient" memiliki dua atau lebih nilai warna yang ditentukan, yang akan diatur
+                        secara bertahap. Kita juga bisa merubah arahnya menggunakan "to" seperti "to bottom, to top, to
+                        left & to right" bisa juga seperti ini "to left top, to left bottom, to right top & to right
+                        bottom.Kita juga bisa menggunakan "deg".</p><br>
+                    <img class="radius5 center w90" src="aset/linear_gradient1.png" alt="Contoh Linear Gradient"><br>
+                    <p>Color stop adalah fitur CSS yang memungkinkan Kita menentukan titik-titik di mana gradient warna
+                        akan berubah. Ini bisa digunakan untuk menciptakan efek gradien yang lebih halus dan teratur.
+                    </P>
+                    <P>Untuk menambahkan color stop pada linear gradient, tambahkan tKita titik setelah setiap warna
+                        dan tentukan nilai "stop" (dalam persen atau unit lain) di mana gradient akan berubah:</p><br>
+                    <img class="radius5 center w90" src="aset/color_stop.png" alt="Contoh Color Stop"><br>
+                    <h4>Radial Gradient</h4>
+                    <p>Radial gradient adalah efek gradien yang dibuat dengan mengikuti garis melingkar dari
+                        titik pusat. Ini bisa digunakan untuk memberikan kesan transisi warna yang lembut pada
+                        elemen HTML.</p>
+                    <p>Untuk menambahkan radial gradient pada elemen HTML, gunakan properti "background-image"
+                        dan tentukan nilai "radial-gradient":</p><br>
+                    <img class="radius5 center w90" src="aset/radial_gradient.png" alt="Contoh Radial Gradient"><br>
+                    <p>Kita juga bisa menentukan jangkauan dari radial gradient tersebut.</p><br>
+                    <img class="radius5 center w90" src="aset/radial_gradient_jangkauan.png"
+                        alt="Contoh jangkauan pada radial gradient"><br>
+                    <p>Kita dapat menentukan posisi titik pusat radial gradient dengan menggunakan atribut "at".</p><br>
+                    <img class="radius5 center w90" src="aset/radial_gradient_posisi.png"
+                        alt="Contoh jangkauan pada radial gradient"><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Font Face</h3>
+                    <p>Font Face adalah fitur pada CSS3 yang memungkinkan Kita menambahkan font yang berbeda pada sebuah
+                        website. Fitur ini sangat bermanfaat bagi Kita yang ingin menggunakan font yang tidak tersedia
+                        pada komputer pengunjung website.</p>
+                    <p>Untuk menambahkan font yang berbeda pada website, Kita bisa menggunakan kode seperti ini:</p><br>
+                    <img class="radius5 center w90" src="aset/font_face.png" alt="Contoh font face"><br>
+                    <p>Penjelasan untuk format-format tersebut</p><br>
+                    <ul>
+                        <li>.ttf (TrueType Font) adalah format font yang dikembangkan oleh Apple dan Microsoft pada
+                            tahun 1991. Format ini merupakan format font yang paling umum digunakan, dan bisa digunakan
+                            pada hampir semua sistem operasi dan browser.</li>
+                        <li>.otf (OpenType Font) adalah format font yang dikembangkan oleh Adobe dan Microsoft pada
+                            tahun 1996. Format ini mirip dengan .ttf, namun memiliki fitur tambahan seperti support
+                            untuk karakter non-Latin, kerning otomatis, dan tabel karakter yang lebih besar.</li>
+                        <li>.woff (Web Open Font Format) adalah format font yang dikembangkan oleh Mozilla Foundation
+                            pada tahun 2010. Format ini merupakan format font yang sangat umum digunakan pada website,
+                            karena didukung oleh hampir semua browser modern.</li>
+                        <li>.woff2 (Web Open Font Format 2) adalah versi terbaru dari .woff, yang memiliki ukuran file
+                            yang lebih kecil dan kecepatan rendering yang lebih tinggi.</li>
+                        <li>.eot (Embedded OpenType) adalah format font yang hanya didukung oleh Internet Explorer.
+                            Format ini biasanya digunakan pada website yang ingin menggunakan font yang hanya tersedia
+                            pada komputer pengembang website.</li>
+                        <li>.svg (Scalable Vector Graphics) adalah format file yang digunakan untuk menyimpan gambar
+                            vektor. Format ini memiliki ukuran file yang kecil dan bisa diperbesar tanpa kehilangan
+                            kualitas gambar, sehingga sering digunakan pada website untuk menyimpan logo atau ikon.</li>
+                    </ul><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Vendor Prefixes</h3>
+                    <p>Vendor prefixes adalah awalan atau prefiks yang ditambahkan ke properti CSS untuk menunjukkan
+                        bahwa properti tersebut merupakan fitur eksperimental atau belum stabil. Vendor prefixes
+                        biasanya digunakan oleh browser untuk menguji fitur baru sebelum fitur tersebut resmi
+                        diimplementasikan pada browser tersebut.</p><br>
+                    <img class="radius5 center w90" src="aset/Vendor_prefixes.png" alt="Contoh Vendor prefixes"><br>
+                    <p>Untuk properti yang memerlukan vendor prefixes bisa dicek pada website
+                        <a href="https://pleeease.iamvdo.me/play/">pleeease.iamvdo.me</a> & <a
+                            href="https://caniuse.com/">caniuse.com</a> .
+                    </p><br>
+
+
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Filter</h3>
+                    <p>Filter adalah fitur pada CSS yang memungkinkan kita mengubah tampilan elemen HTML dengan
+                        menambahkan efek seperti blur, brightness, contrast, grayscale, dan sebagainya. Kita bisa
+                        menggunakan filter pada elemen HTML dengan menambahkan properti 'filter' seperti ini:</p><br>
+                    <img class="radius5 center w90" src="aset/filter_contoh.png" alt="contoh filter"><br>
+                    <p>Untuk penjelasan lebih lanjut bisa dicek <a
+                            href="https://www.w3schools.com/cssref/css3_pr_filter.php">disini</a>.</p><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Transform</h3>
+                    <p>Transform adalah fitur pada CSS yang memungkinkan kita memanipulasi format visual dari elemen
+                        HTML. Kita bisa menggunakan transform pada elemen HTML dengan menambahkan
+                        properti 'transform' seperti ini:</p><br>
+                    <img class="radius5 center w90" src="aset/contoh_transform.png" alt="contoh transform"><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Transition</h3>
+                    <p>Transition adalah fitur pada CSS yang memungkinkan kita mengubah nilai dari properti HTML secara
+                        halus.
+                        Kita bisa menggunakan transition pada elemen HTML dengan menambahkan
+                        properti 'transition' seperti ini:
+                    </p><br>
+                    <img class="radius5 center w90" src="aset/contoh_transisi.png" alt="contoh transisi"><br>
+                </div>
+
+                <div class="border jarak">
+                    <h3 class="jarakHeader">Animation</h3>
+                    <p>CSS Animation adalah fitur pada CSS yang memungkinkan Anda menambahkan animasi pada elemen HTML.
+                        Dengan menggunakan CSS Animation, Anda bisa membuat elemen HTML bergerak atau berubah tampilan
+                        secara berkala sesuai dengan aturan yang ditentukan.</p>
+                    <img class="radius5 center w90" src="aset/contoh_animation.png" alt="contoh animtion"><br>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+</body>
+
+</html>

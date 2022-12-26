@@ -1,0 +1,102 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ^ ^ ^ RESET ^ ^ ^ */
+
+body{
+    background-color: antiquewhite;
+}
+h2{
+	font-size: 24px;
+	font-weight: bold;
+}
+h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+h4{
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+.border{
+	background-color: white;
+	width: 85%;
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.header{
+	background-color: antiquewhite;
+    height: 80px;
+}
+.header h1{
+	font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+}
+
+.ts2{
+	color: rgba(10,60,150, 0.8);
+	text-shadow: 1px 4px 6px #def,0px 0px 0px #000, 1px 4px 6px #def;
+}
+ul,ol{
+	padding-left: 20px;
+}
+
+
+
+.jarakHeader{
+	padding-bottom: 20px;
+}
+.jarak{
+	margin-bottom: 20px;
+}
+.radius5{
+	border-radius: 5px;
+}
+.center{
+	display: block;
+	margin: auto;
+}
+.w90{
+	width: 90%;
+}
